@@ -19,7 +19,6 @@ export default function NewIncident() {
         e.preventDefault();
 
         const data = {title, description, value};
-        console.log(data)
 
         try {
             await api.post('incidents', data, {
